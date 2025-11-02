@@ -59,3 +59,20 @@ function oddOrEven(array) {
 
 // Build a function that returns an array of integers from n to 1 where n > 0.
 
+function reverseSeq(n) {
+    let arr = [];
+    for (let i = n; i >= 1; i--) {
+        arr.push(i);
+    }
+    return arr;
+}
+
+// ---------------------------------------------------------------------------
+
+// 6 [https://www.codewars.com/kata/51f2d1cafc9c0f745c00037d/train/javascript]
+
+// Complete the solution so that it returns true if the first argument(string) passed in ends with the 2nd argument (also a string).
+
+function solution(str, ending) {
+    return str.endsWith(ending);
+}
