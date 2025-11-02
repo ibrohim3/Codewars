@@ -6,10 +6,10 @@
 // For example, the string "This website is for losers LOL!" would become "Ths wbst s fr lsrs LL!".
 // Note: for this kata y isn't considered a vowel.
 
-// function disemvowel(str) {
-//     const vowels = 'aeiouAEIOU';
-//     return str.split('').filter(ch => !vowels.includes(ch)).join('');
-// }
+function disemvowel(str) {
+    const vowels = 'aeiouAEIOU';
+    return str.split('').filter(ch => !vowels.includes(ch)).join('');
+}
 
 // ---------------------------------------------------------------------------
 
@@ -20,10 +20,10 @@
 // The binary number returned should be a string.
 // Examples:(Input1, Input2 --> Output (explanation))) 
 
-// function addBinary(a, b) {
-//     const sum = a + b
-//     return sum.toString(2)
-// }
+function addBinary(a, b) {
+    const sum = a + b
+    return sum.toString(2)
+}
 
 // ---------------------------------------------------------------------------
 
@@ -31,14 +31,14 @@
 
 // In a small town the population is p0 = 1000 at the beginning of a year. The population regularly increases by 2 percent per year and moreover 50 new inhabitants per year come to live in the town. How many years does the town need to see its population greater than or equal to p = 1200 inhabitants? code sz tushintir
 
-// function nbYear(p0, percent, aug, p) {
-//     let years = 0;
-//     while (p0 < p) {
-//         p0 = Math.floor(p0 + (p0 * percent / 100) + aug);
-//         years++;
-//     }
-//     return years;
-// }
+function nbYear(p0, percent, aug, p) {
+    let years = 0;
+    while (p0 < p) {
+        p0 = Math.floor(p0 + (p0 * percent / 100) + aug);
+        years++;
+    }
+    return years;
+}
 
 // ---------------------------------------------------------------------------
 
@@ -52,3 +52,10 @@ function oddOrEven(array) {
     const sum = array.reduce((acc, num) => acc + num, 0);
     return sum % 2 === 0 ? "even" : "odd";
 }
+
+// ---------------------------------------------------------------------------
+
+// 5 [https://www.codewars.com/kata/5a00e05cc374cb34d100000d/train/javascript]
+
+// Build a function that returns an array of integers from n to 1 where n > 0.
+
