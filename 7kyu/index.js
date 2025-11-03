@@ -100,3 +100,21 @@ function rps(p1, p2) {
         return "Player 2 won!";
     }
 }
+
+// ---------------------------------------------------------------------------
+
+// 8 [https://www.codewars.com/kata/576bb71bbbcf0951d5000044/train/javascript]
+
+function countPositivesSumNegatives(arr) {
+    if (!arr || arr.length === 0) return [];
+
+    let countPositives = 0;
+    let sumNegatives = 0;
+
+    for (let num of arr) {
+        if (num > 0) countPositives++;
+        else if (num < 0) sumNegatives += num;
+    }
+
+    return [countPositives, sumNegatives];
+}
