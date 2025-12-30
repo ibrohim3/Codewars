@@ -126,7 +126,8 @@ function countPositivesSumNegatives(arr) {
 
 // -----------------------------------------------------------------------------
 
-// 8 [https://www.codewars.com/kata/55cbc3586671f6aa070000fb/train/javascript]
+// 9 [https://www.codewars.com/kata/55cbc3586671f6aa070000fb/train/javascript]
+
 // This function should test if the factor is a factor of base.
 // Return true if it is a factor or false if it is not.
 // About factors
@@ -143,4 +144,26 @@ function checkForFactor(base, factor) {
     } else {
         return false
     }
+}
+
+// -----------------------------------------------------------------------------
+
+// 10 [https://www.codewars.com/kata/57241e0f440cd279b5000829/train/javascript]
+
+// Your Job
+// Find the sum of all multiples of n below m
+// Keep in Mind
+// n and m should be natural numbers (positive integers). Otherwise, see the examples in your language about how to handle invalid input values.
+// m is excluded from the multiples
+
+function sumMul(n, m) {
+    let sum = 0;
+
+    if (n <= 0 || m <= 0) return "INVALID";
+
+    for (let i = n; i < m; i += n) {
+        sum += i;
+    }
+
+    return sum;
 }
